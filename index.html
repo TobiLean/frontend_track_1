@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section id="main">
+        <section id="forehead">
+            <div id="profileCard">
+                <img id="pfpImage" data-testid="slackProfilePicture" src="/assets/slack_pfp.png" alt="profile picture">
+                <div id="slackDetails">
+                    <p id="slackId" data-testid="slackDisplayName">Beautiful Orange</p>
+                    <p id="slackEmail" data-testid="slackEmail">tobiloba.tsl@gmail.com</p>
+                </div>
+            </div>
+            <div id="dateTime">
+                <p id="currentDay" data-testid="currentDay"></p>
+                <p id="currentTime" data-testid="currentTimeUTC"></p>
+            </div>
+        </section>
+        <div id="goalsTitle">Goals</div>
+        <section id="goalsSection">
+            <div class="year_card" id="year1">
+                <h1><b>YEAR 1 Goals</b></h1>
+                <ul>
+                    <li>Learn React JS</li>
+                    <li>Build more apps with MERN stack</li>
+                    <li>Read a book a month</li>
+                    <li>Reach HNG stage 10 as a top finalist</li>
+                    <li>Learn video editing with adobe premier</li>
+                </ul>
+            </div>
+            <div class="year_card" id="year2"></div>
+        </section>
+    </section>
+
+    <footer>
+        <a class="link" data-testid="hngLink" href="http://hng.tech/learn">hng.tech/learn</a>
+        <a class="link" data-testid="keywordLink" href="http://keyword.dog/">keyword.dog</a>
+        <a class="link" data-testid="scrapeanywebLink" href="http://scrapeanyweb.site/">scrapeanyweb.site</a>
+    </footer>
+</body>
+<script src="./scripts/index.js" type="module"></script>
+</html>

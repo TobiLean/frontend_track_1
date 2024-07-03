@@ -1,0 +1,228 @@
+:root {
+    font-size: 10px;
+    font-family: 'Fira Sans';
+    
+}
+
+body{
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100vw;
+}
+
+#main {
+    height: calc(100vh - 40px);
+    min-height: calc(100vh - 40px);
+    width: 100vw;
+    min-width: 100vw;
+    box-sizing: border-box;
+    background-color: rgb(255, 174, 0);
+    position: absolute;
+    top: 0vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+#forehead {
+    position: relative;
+    left: 0;
+    /* width: 100vw; */
+    min-width: 100vw;
+    height: 18%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0px 20px 0 20px;
+    background-color: rgb(255, 174, 0);
+}
+
+#profileCard {
+    height: 100px;
+    width: 300px;
+    position: relative;
+    top: 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+#slackId {
+    font-size: 2.4rem;
+    margin: 0 0 2.5px 0;
+}
+
+/* #pfp {
+    height: 100px;
+    width: 100px;
+}
+
+#pfp img {
+    width: 100%;
+    max-width: 100%;
+} */
+
+#pfpImage {
+    object-fit: fill;
+}
+
+#slackDetails {
+    margin: 0 0 0 8px;
+}
+
+#slackEmail {
+    margin: 2.5px 0 0 0;
+}
+
+#dateTime {
+    height: max-content;
+    width: 300px;
+    position: relative;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1.6rem;
+}
+
+#currentTime {
+    margin: 0 0 0 8px;
+}
+
+#goalsTitle {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.2rem;
+    background-color: white;
+    border-radius: 25px 25px 0 0;
+    box-sizing: border-box;
+    padding: 10px 0 0 0;
+    position: relative;
+}
+
+#goalsSection {
+    position: relative;
+    left: 0px;
+    bottom: 0;
+    width: 100%;
+    height: 72%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.year_card {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: black 3px 7px 13px;
+    font-size: 1.6rem;
+    box-sizing: border-box;
+    padding: 10px 5px 10px 20px;
+    text-wrap: pretty;
+}
+
+.year_card h1 {
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0vh;
+    left: 0;
+    height: 40px;
+    width: 100vw;
+    background-color: white;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.link {
+    text-decoration: none !important;
+    color: black;
+    margin: 0 10px 0 10px;
+}
+
+.link:hover {
+    color: rgb(255, 174, 0);
+}
+
+@media screen and (max-width: 500px) {
+
+    #goalsSection {
+        align-items: center;
+        flex-direction: column;
+        min-height: 65%;
+        height: max-content;
+    }
+
+    .year_card {
+        width: 250px;
+        min-height: 350px;
+        margin-top: 50px;
+    }
+
+    :root {
+        font-size: 8px;
+    }
+
+    #forehead {
+        padding: 0 4px 0 4px;
+        height: 30%;
+    }
+
+    /* #main {
+        position: absolute;
+        bottom: 40px;
+    } */
+
+}
+
+@media screen and (max-width: 800px) {
+
+    #goalsSection {
+        align-items: center;
+        flex-direction: column;
+        min-height: max-content;
+        height: max-content;
+        width: 100%;
+        padding: 0 0 100px 0;
+    }
+
+    .year_card {
+        width: 400px;
+        min-height: 450px;
+        margin-top: 50px;
+    }
+
+    :root {
+        font-size: 8px;
+    }
+
+    #forehead {
+        padding: 0 10px 0 10px;
+        height: 20%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 20px 10px 20px 10px;
+    }
+
+    #main {
+        width: 100%;
+    }
+
+}
