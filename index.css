@@ -166,13 +166,15 @@ footer {
     #goalsSection {
         align-items: center;
         flex-direction: column;
-        min-height: 65%;
+        min-height: max-content;
         height: max-content;
+        width: 100%;
+        padding: 0 0 100px 0;
     }
 
     .year_card {
-        width: 250px;
-        min-height: 350px;
+        width: 300px;
+        min-height: 450px;
         margin-top: 50px;
     }
 
@@ -181,18 +183,20 @@ footer {
     }
 
     #forehead {
-        padding: 0 4px 0 4px;
-        height: 30%;
+        padding: 0 10px 0 10px;
+        height: 20%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 20px 10px 20px 10px;
     }
 
-    /* #main {
-        position: absolute;
-        bottom: 40px;
-    } */
+    #main {
+        width: 100%;
+    }
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) and (min-width: 501px) {
 
     #goalsSection {
         align-items: center;

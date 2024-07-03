@@ -18,19 +18,8 @@ function updateTime(day_node, time_node="") {
 
     day_node.innerText = today;
 
-    //console.log("This is the full UTC date: ", date.toUTCString())
 }
 
 setInterval(()=>{
     updateTime(current_day, current_time)
 }, 1000)
-
-
-pfp_image.addEventListener("load", (event) => {
-    const { naturalWidth, naturalHeight, width, height } = pfp_image;
-
-  console.log(`
-  Natural size: ${naturalWidth} x ${naturalHeight} pixels
-  Displayed size: ${width} x ${height} pixels
-  `)
-  });
